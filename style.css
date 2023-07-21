@@ -150,10 +150,10 @@ body{
 
 
 
-@media (min-width: 375px) {
+@media (orientation: landscape) {
     body{
         display: flex;
-        justify-content: center;
+        justify-content : center;
         align-items: center;
     }
     main{
@@ -224,5 +224,144 @@ body{
         letter-spacing: 0.9;
         word-wrap: break-word;
     }
+
+}
+
+@media (orientation: portrait){
+    
+.person-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* border: 2px solid black; */
+    margin-left: 1em;
+}
+
+.person-details h2{
+    font-size: 1em;
+}
+
+.person-details p{
+    opacity: 50%;
+    font-size: .8em;
+}
+
+.profile-container{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid purple; */
+    margin-bottom: 1.2em;
+    z-index: 2;
+}
+
+.profile-container img{
+    border-radius: 50%;
+    height: 30px;
+    border: 2px solid rgba(180, 164, 206, 0.5);
+    width: auto;
+}
+
+.card{
+    /* border: 2px solid orange; */
+    border-radius: 10px;
+    padding: 2em;
+    background-color: #e3dfe9;
+    color: #272626;
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.6em;
+}
+
+.card h1{
+    font-size: 1.6em;
+    letter-spacing: 1.3;
+    margin-bottom: 1.2em;
+    font-weight: 600;
+    color: rgb(39, 37, 37);
+}
+
+#quote-img{
+    position: absolute;
+    top: 0;
+    right: 20%;
+    z-index: 1;
+}
+
+.card p{
+    opacity: 70%;
+    line-height: 1.4;
+    letter-spacing: 0.9;
+}
+
+.card-danial{
+    position: relative;
+    background-color: #7541c8;
+    color: #cfcfcf;
+    overflow: hidden;
+}
+
+.card-danial h1{
+    z-index: 2;
+    color: white;
+    word-spacing: 1px;
+}
+
+
+.card-jonathan{
+    background-color: #48556a;
+    color: #cfcfcf;
+}
+
+.card-jonathan h1{
+    color: white;
+    word-spacing: 1px;
+}
+
+.card-jonathan img{
+    border: transparent;
+}
+
+.card-Jeanette, .card-Kira{
+    background-color: white;
+    color: #48556a;
+}
+
+.card-Jeanette h1,.card-Kira h1{
+    color: #48556a;
+    word-spacing: 1px;
+}
+
+.card-Jeanette img, .card-Kira img{
+    border: transparent;
+}
+
+.card-Jeanette{
+    background-color: white;
+    color: #48556a;
+}
+
+.card-Jeanette h1{
+    color: #48556a;
+    word-spacing: 1px;
+}
+
+.card-Jeanette img{
+    border: transparent;
+}
+
+.card-Patrick{
+    background-color: #19212e;
+    color: #cfcfcf;
+}
+
+.card-Patrick h1{
+    color: white;
+    word-spacing: 1px;
+}
+
+.card-Patrick img{
+    border: 2px solid rgb(139, 96, 207);
+}
 
 }
